@@ -5,6 +5,7 @@
 %define		_pearname	CodeGen_PECL
 
 Summary:	%{_pearname} - Tool to generate PECL extensions from an XML description
+Summary(pl):	%{_pearname} - narzêdzie do generowania rozszerzeñ PECL z opisu XML
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
 %define	_rc rc1
@@ -17,8 +18,8 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_rc}.tgz
 URL:		http://pear.php.net/package/CodeGen_PECL
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
-Requires:	php-pear-PEAR >= 1.2
 Requires:	php-pear-CodeGen >= 0.9
+Requires:	php-pear-PEAR >= 1.2
 Obsoletes:	php-pear-PECL_Gen
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -31,6 +32,15 @@ from an XML description file and generates a complete ready-to-compile
 PECL extension.
 
 In PEAR status of this package is: %{_status}.
+
+%description -l pl
+CodeGen_PECL (wcze¶niej znany jako PECL_Gen) to napisany w czystym PHP
+zamiennik skryptów pow³oki ext_skel dostarczanych ze ¼ród³ami PHP 4.
+Odczytuje opcje konfiguracyjne, prototypy funkcji i fragmenty kodu z
+pliku opisu XML, a nastêpnie generuje pe³ne, gotowe do skompilowania
+rozszerzenie PECL.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %pear_package_setup
