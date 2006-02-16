@@ -20,7 +20,7 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:5
 Requires:	php-pear
 Requires:	php-pear-CodeGen >= 0.9
-Requires:	php-pear-PEAR >= 1:1.2
+Requires:	php-pear-PEAR-core >= 1:1.2
 Obsoletes:	php-pear-PECL_Gen
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
