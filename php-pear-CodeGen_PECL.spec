@@ -4,12 +4,12 @@
 %define		_status		beta
 %define		_pearname	CodeGen_PECL
 
+%define	_rc rc1
+%define	_rel 1
 Summary:	%{_pearname} - Tool to generate PECL extensions from an XML description
 Summary(pl):	%{_pearname} - narzêdzie do generowania rozszerzeñ PECL z opisu XML
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-%define	_rc rc1
-%define	_rel 0.1
 Release:	%{_rc}.%{_rel}
 License:	PHP
 Group:		Development/Languages/PHP
