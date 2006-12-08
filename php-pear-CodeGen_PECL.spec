@@ -1,27 +1,25 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		CodeGen
 %define		_subclass	PECL
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	CodeGen_PECL
 
-%define	_rc rc1
-%define	_rel 1
 Summary:	%{_pearname} - Tool to generate PECL extensions from an XML description
 Summary(pl):	%{_pearname} - narzêdzie do generowania rozszerzeñ PECL z opisu XML
 Name:		php-pear-%{_pearname}
-Version:	1.0.0
-Release:	%{_rc}.%{_rel}
+Version:	1.0.3
+Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_rc}.tgz
-# Source0-md5:	15abd632ab1bb575a73950ed89a3c4b2
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	0e8fce6c3773483f937de9a13dff83ba
 URL:		http://pear.php.net/package/CodeGen_PECL
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:5
+Requires:	php-common >= 3:5.0
 Requires:	php-pear
-Requires:	php-pear-CodeGen >= 0.9
+Requires:	php-pear-CodeGen = 1.0.2
 Requires:	php-pear-PEAR-core >= 1:1.2
 Obsoletes:	php-pear-PECL_Gen
 BuildArch:	noarch
