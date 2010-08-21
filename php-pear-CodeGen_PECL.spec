@@ -8,18 +8,18 @@ Summary:	%{_pearname} - Tool to generate PECL extensions from an XML description
 Summary(pl.UTF-8):	%{_pearname} - narzędzie do generowania rozszerzeń PECL z opisu XML
 Name:		php-pear-%{_pearname}
 Version:	1.1.2
-Release:	1
+Release:	2
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	1d2e3a2eb229aacc24dc1cda73636c8d
 URL:		http://pear.php.net/package/CodeGen_PECL
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:5.0
 Requires:	php-pear
-Requires:	php-pear-CodeGen >= 1.0.2
+Requires:	php-pear-CodeGen >= 1.0.5
 Requires:	php-pear-PEAR-core >= 1:1.2
 Obsoletes:	php-pear-PECL_Gen
 BuildArch:	noarch
