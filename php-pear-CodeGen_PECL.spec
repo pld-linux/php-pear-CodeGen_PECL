@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		CodeGen
 %define		_subclass	PECL
 %define		_status		stable
